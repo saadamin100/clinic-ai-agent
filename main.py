@@ -405,9 +405,8 @@ async def check_online_appointment_reminders():
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Sabhi domains allow
-    allow_credentials=False, # Credentials ke sath '*' allow nahi hota
-    allow_methods=["*"],
+    allow_origins=["https://frontend-retell-clinic-system.onrender.com"],
+    allow_methods=["POST"],
     allow_headers=["*"],
 )
 
