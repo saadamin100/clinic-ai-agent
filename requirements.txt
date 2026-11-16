@@ -3,6 +3,10 @@ fastapi
 uvicorn[standard]
 pywa
 python-dotenv
+jinja2
+python-multipart
+httpx
+apscheduler
 
 # --- LLM orchestration ---
 langchain-core
@@ -17,27 +21,21 @@ langgraph-checkpoint-sqlite
 pydantic
 email-validator
 
-# --- STT / vision via OpenRouter (OpenAI-compatible client) ---
+# --- STT / vision via OpenRouter ---
 openai
 
 # --- RAG: embeddings + vector store ---
 faiss-cpu
 
-# --- HTTP calls to the clinic appointment backend ---
+# --- HTTP & Database ---
 requests
+psycopg[binary]
 
 # --- Complaint logging ---
 gspread
 
-# --- Redis: message dedupe + per-patient distributed locking ---
+# --- Redis ---
 redis
 
-# --- Timezone data (required on Windows; zoneinfo has no built-in IANA db there) ---
+# --- Timezone data ---
 tzdata
-jinja2
-fastapi
-uvicorn[standard]
-pydantic
-email-validator
-python-dotenv
-psycopg[binary]
