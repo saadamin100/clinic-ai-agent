@@ -35,3 +35,9 @@ redis
 # --- Timezone data (required on Windows; zoneinfo has no built-in IANA db there) ---
 tzdata
 jinja2
+fastapi
+uvicorn[standard]
+pydantic
+email-validator
+python-dotenv
+psycopg[binary]
