@@ -1,7 +1,8 @@
 fastapi
-uvicorn[standard]
-pydantic
-email-validator
+uvicorn
 python-dotenv
-psycopg[binary]
 jinja2
+pydantic[email]
+apscheduler
+httpx
+python-multipart
