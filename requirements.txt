@@ -6,3 +6,5 @@ pydantic[email]
 apscheduler
 httpx
 python-multipart
+redis
+
